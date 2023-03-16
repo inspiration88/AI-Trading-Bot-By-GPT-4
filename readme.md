@@ -4,11 +4,10 @@ First and foremost, I'd like to mention that my coding experience is limited to 
 
 This AI trading bot leverages deep reinforcement learning to trade cryptocurrencies. It is trained on historical data and can be used for both backtesting and live trading. The bot employs technical indicators and additional actions, such as stop loss, take profit, and position scaling, to make informed trading decisions.
 
-Support our open-source AI Trading Bot project! Your donations help us improve & achieve our goal. Every bit counts! 
+## Contributors
+No coding experience but eager to help us build a revolutionary AI Trading bot by ChatGPT-4? No problem! Just get a Plus subscription for ChatGPT-4 and start collaborating with us.
 
-Wallet: BTC - 18Ht4hv6iY1LwToduoRnFAftTSDPnSFD4p ETH/BNB/USDT/BUSD/USDC - 0x570a977847a1b98a2e23cc4CB05E71046d1234DE
-
-Date of start: 03/15/2023
+If you're a skilled coder, your expertise is invaluable! Join us and use ChatGPT-4 as a powerful tool to enhance our code and strengthen the project.
 
 ## Components
 
@@ -29,12 +28,19 @@ Date of start: 03/15/2023
 
 ## Planed shortterm updates
 
-1. Based that is built on ChatGPT-4 i would leave open the possibility for people to edit the trading enviroment to train the bot into different strategies
+1. As the bot is built on ChatGPT-4, we encourage community contributions to modify the trading environment, enabling the training of the bot with various strategies.
 
-2. I would like to reinforce its knowledge by making it learn crypto charts so its being capable of trade any coin with profit
+2. We aim to enhance the bot's knowledge by teaching it to analyze crypto charts, empowering it to trade any coin profitably.
 
 3. Add more connectors for other exchanges like Okx, Bybit, Kucoin, Kraken, etc.
 
 ## Goal
 
 Consistently 10x my trading account using high leverage
+
+
+## Donations
+
+Support our open-source AI Trading Bot project! Your donations help us improve & achieve our goal. Every bit counts! 
+
+Wallet: BTC - 18Ht4hv6iY1LwToduoRnFAftTSDPnSFD4p ETH/BNB/USDT/BUSD/USDC - 0x570a977847a1b98a2e23cc4CB05E71046d1234DE
