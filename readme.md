@@ -1,8 +1,13 @@
 # AI Cryptocurrency Trading Bot Fully Built with ChatGPT-4
 
-First and foremost, I'd like to mention that my coding experience is limited to minor tweaks in bots, and I lack the skills to create a bot, write functions in Python, or achieve this level of coding quality, proficiency, and expertise. This ongoing project aims to explore ChatGPT-4's ability to develop a bot, apply AI, and ultimately achieve profitable automated trading.
+This ongoing project aims to explore ChatGPT-4's ability to develop a bot, apply AI, and ultimately achieve profitable automated trading.
 
 This AI trading bot leverages deep reinforcement learning to trade cryptocurrencies. It is trained on historical data and can be used for both backtesting and live trading. The bot employs technical indicators and additional actions, such as stop loss, take profit, and position scaling, to make informed trading decisions.
+
+## Why I Started the Bot
+Over the past 2 years, I've been learning about trading and using ready-made bots. My initial goal was to learn how to trade effectively, find an edge, and become profitable. However, creating a trading bot requires deep knowledge and understanding of coding, which I found challenging. My coding experience has been limited to minor tweaks in bots, and I lack the skills to create a bot, write functions in Python, or achieve this level of coding quality, proficiency, and expertise.
+
+On March 15th, ChatGPT received an update that unlocked incredible potential. After conducting some tests, I realized that its power could be harnessed to create an AI trading bot simply by utilizing ChatGPT's capabilities. This inspired me to embark on the journey of creating an AI trading bot, turning this vision into reality with the help of ChatGPT.
 
 ## Contributors
 No coding experience but eager to help us build a revolutionary AI Trading bot by ChatGPT-4? No problem! Just get a Plus subscription for ChatGPT-4 and start collaborating with us.
@@ -37,7 +42,6 @@ If you're a skilled coder, your expertise is invaluable! Join us and use ChatGPT
 ## Goal
 
 Consistently 10x my trading account using high leverage
-
 
 ## Donations
 
