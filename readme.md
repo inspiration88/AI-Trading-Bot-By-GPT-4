@@ -4,7 +4,9 @@ First and foremost, I'd like to mention that my coding experience is limited to 
 
 This AI trading bot leverages deep reinforcement learning to trade cryptocurrencies. It is trained on historical data and can be used for both backtesting and live trading. The bot employs technical indicators and additional actions, such as stop loss, take profit, and position scaling, to make informed trading decisions.
 
-Any donations would be appreciated for keep working on this project and share public to make achieve its goal. Donations wallet: 0x570a977847a1b98a2e23cc4CB05E71046d1234DE
+Support our open-source AI Trading Bot project! Your donations help us improve & achieve our goal. Every bit counts! 
+
+Wallet: BTC - 18Ht4hv6iY1LwToduoRnFAftTSDPnSFD4p ETH/BNB/USDT/BUSD/USDC - 0x570a977847a1b98a2e23cc4CB05E71046d1234DE
 
 Date of start: 03/15/2023
 
@@ -30,6 +32,8 @@ Date of start: 03/15/2023
 1. Based that is built on ChatGPT-4 i would leave open the possibility for people to edit the trading enviroment to train the bot into different strategies
 
 2. I would like to reinforce its knowledge by making it learn crypto charts so its being capable of trade any coin with profit
+
+3. Add more connectors for other exchanges like Okx, Bybit, Kucoin, Kraken, etc.
 
 ## Goal
 
