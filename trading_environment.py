@@ -1,7 +1,7 @@
 import gym
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+from indicators import moving_average, calculate_rsi, volume_pct_change, support_resistance_levels
 
 class TradingEnvironment(gym.Env):
     def __init__(self, data, window_size, initial_balance, leverage):
@@ -13,9 +13,16 @@ class TradingEnvironment(gym.Env):
         self.leverage = leverage
 
         self.action_space = gym.spaces.Discrete(8)  # Increased from 6 to 8 actions
-        self.observation_space = gym.spaces.Box(low=0, high=1, shape=(window_size, 8), dtype=np.float32)
+        self.observation_space = gym.spaces.Box(low=0, high=1, shape=(window_size, 10), dtype=np.float32)
+
+        # Calculate indicators
+        self.data['ma'] = moving_average(self.data['close'])
+        self.data['rsi'] = calculate_rsi(self.data['close'])
+        self.data['volume_pct_change'] = volume_pct_change(self.data['volume'])
+        self.data['resistance'], self.data['support'] = support_resistance_levels(self.data)
 
         self.reset()
+
 
     def reset(self):
         self.balance = self.initial_balance
@@ -27,11 +34,13 @@ class TradingEnvironment(gym.Env):
         self.balance_history = []
 
         state = self.data.iloc[self.current_step - self.window_size : self.current_step].copy()
-        state['moving_average'] = state['close'].rolling(window=14).mean()
-        state['rsi'] = self.calculate_rsi(state['close'], period=14)
-        state['volume_pct_change'] = state['volume'].pct_change()
+        state['moving_average'] = moving_average(state['close'], window=14)
+        state['rsi'] = calculate_rsi(state['close'], period=14)
+        state['volume_pct_change'] = volume_pct_change(state['volume'])
+        state['resistance'], state['support'] = support_resistance_levels(self.data)
 
         return state.values
+
 
     def step(self, action):
         self.current_step += 1
@@ -52,7 +61,8 @@ class TradingEnvironment(gym.Env):
         # Hold
         elif action == 1:
             if self.position is not None:
-            reward = -2  # Small penalty for holding a position
+                reward = -2  # Small penalty for holding a position
+
 
         # Close Long Position
         elif action == 2:
@@ -130,6 +140,14 @@ class TradingEnvironment(gym.Env):
         else:
             reward = 0
 
-        return self.data.iloc[self.current_step - self.window_size : self.current_step].values, reward, done, dict()
+        state = self.data.iloc[self.current_step - self.window_size : self.current_step].copy()
+        state['moving_average'] = moving_average(state['close'], window=14)
+        state['rsi'] = calculate_rsi(state['close'], period=14)
+        state['volume_pct_change'] = volume_pct_change(state['volume'])
+        state['resistance'], state['support'] = support_resistance_levels(self.data)
+
+        return state.values, reward, done, dict()
+
+
 
 
