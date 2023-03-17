@@ -4,11 +4,6 @@ This ongoing project aims to explore ChatGPT-4's ability to develop a bot, apply
 
 This AI trading bot leverages deep reinforcement learning to trade cryptocurrencies. It is trained on historical data and can be used for both backtesting and live trading. The bot employs technical indicators and additional actions, such as stop loss, take profit, and position scaling, to make informed trading decisions.
 
-## Why I Started the Bot
-Over the past 2 years, I've been learning about trading and using ready-made bots. My initial goal was to learn how to trade effectively, find an edge, and become profitable. However, creating a trading bot requires deep knowledge and understanding of coding, which I found challenging. My coding experience has been limited to minor tweaks in bots, and I lack the skills to create a bot, write functions in Python, or achieve this level of coding quality, proficiency, and expertise.
-
-On March 15th, ChatGPT received an update that unlocked incredible potential. After conducting some tests, I realized that its power could be harnessed to create an AI trading bot simply by utilizing ChatGPT's capabilities. This inspired me to embark on the journey of creating an AI trading bot, turning this vision into reality with the help of ChatGPT.
-
 ## Contributors
 No coding experience but eager to help us build a revolutionary AI Trading bot by ChatGPT-4? No problem! Just get a Plus subscription for ChatGPT-4 and start collaborating with us.
 
@@ -43,8 +38,7 @@ If you're a skilled coder, your expertise is invaluable! Join us and use ChatGPT
 
 Consistently 10x my trading account using high leverage
 
-## Donations
+## Why I Started the Bot
+Over the past 2 years, I've been learning about trading and using ready-made bots. My initial goal was to learn how to trade effectively, find an edge, and become profitable. However, creating a trading bot requires deep knowledge and understanding of coding, which I found challenging. My coding experience has been limited to minor tweaks in bots, and I lack the skills to create a bot, write functions in Python, or achieve this level of coding quality, proficiency, and expertise.
 
-Support our open-source AI Trading Bot project! Your donations help us improve & achieve our goal. Every bit counts! 
-
-Wallet: BTC - 18Ht4hv6iY1LwToduoRnFAftTSDPnSFD4p ETH/BNB/USDT/BUSD/USDC - 0x570a977847a1b98a2e23cc4CB05E71046d1234DE
+On March 15th, ChatGPT received an update that unlocked incredible potential. After conducting some tests, I realized that its power could be harnessed to create an AI trading bot simply by utilizing ChatGPT's capabilities. This inspired me to embark on the journey of creating an AI trading bot, turning this vision into reality with the help of ChatGPT.

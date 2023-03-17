@@ -21,13 +21,13 @@ csv_train = fetch_binance_data(api_key, secret_key, symbol, timeframe_to_trade, 
 csv_backtesting = fetch_binance_data(api_key, secret_key, symbol, timeframe_to_trade, backtest_data_since, backtest_data_until, 'btcusdt_backtest.csv')
 
 # Step 1: Train the trading bot
-train.train_bot(symbol, leverage, timeframe_to_trade, csv_train, window_size, initial_balance)
+trained_model = train.train_bot(symbol, leverage, timeframe_to_trade, csv_train, window_size, initial_balance)
 
 # Step 2: Backtest the trading bot
-profitable = backtesting.backtest_bot(symbol, leverage, timeframe_to_trade, csv_backtesting)
+profitable = backtesting.backtest_bot(csv_backtesting, trained_model)
 
 # Step 4: If the backtesting shows profitability, run the live trading bot
 if profitable:
-    live_trading.live_trade_bot(symbol, leverage, timeframe_to_trade, api_key, secret_key)
+    live_trading.live_trade_bot(symbol, leverage, timeframe_to_trade, api_key, secret_key, trained_model)
 else:
     print("The bot is not profitable based on backtesting. Retrain the bot before live trading.")

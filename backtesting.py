@@ -7,25 +7,26 @@ from rl.agents import DQNAgent
 from rl.memory import SequentialMemory
 from rl.policy import EpsGreedyQPolicy
 
-def backtest_bot(leverage, csv_backtesting):
+def backtest_bot(leverage, csv_backtesting, model_path):
+    model_path = "trained_model.h5"
     backtest_data = pd.read_csv(csv_backtesting)
     total_episodes = 50
     successful_runs = 0
-    initial_balance = train.INITIAL_BALANCE
-    window_size = train.WINDOW_SIZE
+    initial_balance = 100
+    window_size = 14
     min_target_balance = initial_balance * 10
 
-    portfolio_values = []
-
     # Load the trained model
-    model_path = train.train_bot(...)  # Call the train_bot function with the required arguments
-    trained_model = load_model(model_path)
+    model = load_model(model_path)
 
-    # Create a DQNAgent instance with the loaded model for backtesting
+    # Set up DQN agent with the loaded model
     memory = SequentialMemory(limit=5000, window_length=1)
     policy = EpsGreedyQPolicy(eps=0.1)
-    dqn_agent = DQNAgent(model=trained_model, nb_actions=environment.action_space.n, memory=memory, nb_steps_warmup=500, target_model_update=1e-2, policy=policy)
-    dqn_agent.compile(metrics=['mae'])
+    dqn = DQNAgent(model=model, nb_actions=environment.action_space.n, memory=memory, nb_steps_warmup=500,
+                   target_model_update=1e-2, policy=policy)
+    dqn.compile(Adam(learning_rate=0.0001), metrics=['mae'])
+
+    portfolio_values = []
 
     for episode in range(total_episodes):
         environment = te.TradingEnvironment(data=backtest_data, window_size=window_size, initial_balance=initial_balance, leverage=leverage)
@@ -33,7 +34,7 @@ def backtest_bot(leverage, csv_backtesting):
         done = False
 
         while not done:
-            action = dqn_agent.forward(state)
+            action = dqn.model.act(state)  # Use the loaded model to make decisions
             state, reward, done, _ = environment.step(action)
             portfolio_values.append(environment.balance)
 
