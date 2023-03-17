@@ -39,6 +39,8 @@ If you're a skilled coder, your expertise is invaluable! Join us and use ChatGPT
 Consistently 10x my trading account using high leverage
 
 ## Why I Started the Bot
-Over the past 2 years, I've been learning about trading and using ready-made bots. My initial goal was to learn how to trade effectively, find an edge, and become profitable. However, creating a trading bot requires deep knowledge and understanding of coding, which I found challenging. My coding experience has been limited to minor tweaks in bots, and I lack the skills to create a bot, write functions in Python, or achieve this level of coding quality, proficiency, and expertise.
+Over the past 2 years, I've been immersing myself in the world of trading and experimenting with various ready-made bots. My primary objective was to develop effective trading strategies, identify a competitive edge, and ultimately achieve profitability through full automation and standalone trading. The creation of an advanced trading bot demands a deep understanding of coding, which prompted me to pursue this knowledge after mastering the art of trading.
 
-On March 15th, ChatGPT received an update that unlocked incredible potential. After conducting some tests, I realized that its power could be harnessed to create an AI trading bot simply by utilizing ChatGPT's capabilities. This inspired me to embark on the journey of creating an AI trading bot, turning this vision into reality with the help of ChatGPT.
+Although I've gained some coding experience by making minor tweaks to existing bots (copy-pasting and modifying code snippets), my current skill set falls short of what's needed to create a bot from scratch, write complex functions in Python, or reach a level of coding proficiency and expertise.
+
+On March 15th, ChatGPT underwent an update that unleashed its remarkable potential. After running a series of tests, I discovered that ChatGPT's capabilities could be harnessed to develop an AI trading bot. This realization sparked my inspiration for embarking on a journey to create an AI-powered trading bot, turning this ambitious vision into reality with the invaluable assistance of ChatGPT.
