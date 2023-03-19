@@ -17,7 +17,7 @@ If you're a skilled coder, your expertise is invaluable! Join us and use ChatGPT
 
 3. `train.py` - Responsible for training the AI trading bot using historical data. It preprocesses data, creates and compiles the model, and trains the model using the trading environment.
 
-4. `trading_environment.py` - Contains the custom trading environment for the AI trading bot, based on OpenAI Gym. The environment defines the observation space, action space, and reward function. The reward function encourages the bot to make more trades when the account balance is closer to the initial balance and to focus on higher-quality trades as the balance increases.
+4. `brain.py` - Contains the custom trading environment for the AI trading bot, based on OpenAI Gym. The environment defines the observation space, action space, and reward function. The reward function encourages the bot to make more trades when the account balance is closer to the initial balance and to focus on higher-quality trades as the balance increases.
 
 5. `backtesting.py` - Used to backtest the trained model on historical data. It simulates trading with the trained model and provides success rates to evaluate the model's performance before deploying it for live trading.
 
@@ -26,13 +26,21 @@ If you're a skilled coder, your expertise is invaluable! Join us and use ChatGPT
 7. `performance_metrics.py` - Calculates various performance metrics, such as returns, Sharpe ratio, and drawdown, for the trading bot. These metrics can be used to evaluate the performance of the bot and make adjustments as needed.
 
 
-## Planed shortterm updates
+## Planed updates
 
 1. As the bot is built on ChatGPT-4, we encourage community contributions to modify the trading environment, enabling the training of the bot with various strategies.
 
 2. We aim to enhance the bot's knowledge by teaching it to analyze crypto charts, empowering it to trade any coin profitably.
 
 3. Add more connectors for other exchanges like Okx, Bybit, Kucoin, Kraken, etc.
+
+4. Add the ability to trade any coin
+
+5. Incorporate sentiment analysis of a specific altcoin's community to enhance the bot's decision-making process. For instance, if the goal is to accumulate a project like the ARB token (Arbitrum), the bot should monitor relevant news on Twitter, track exchange updates for potential ARB token listings, and gauge sentiment within the project's Discord and other significant social media platforms. By analyzing this information, the bot can identify congruence between the chart trends and current news, enabling it to make more informed trading decisions.
+
+6. Introduce an Arbitrage Mining feature to the bot, enabling it to capitalize on price discrepancies across multiple exchanges. While the bot is in a trade, it can simultaneously open three positions in three different exchanges rather than a single large position in one exchange. When price fluctuations occur due to spikes, causing the price to be higher in one exchange compared to another, the bot can quickly rebalance the trade before other arbitrage bots have a chance to act. This is achieved by partially closing the trade in the higher-priced exchange and opening a new position in the lower-priced exchange, subsequently restoring equilibrium. By exploiting the liquidity adjustments in this manner, the bot can take advantage of arbitrage opportunities more effectively.
+
+7. Add On-chain support to multiple blockchains for the arbitrage mining feature included crossed to CEX.
 
 ## Goal
 

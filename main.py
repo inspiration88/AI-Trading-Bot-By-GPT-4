@@ -1,4 +1,4 @@
-import trading_environment as te
+import brain as te
 import train
 import backtesting
 import live_trading

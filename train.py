@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from trading_environment import TradingEnvironment
+from brain import TradingEnvironment
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.optimizers import Adam

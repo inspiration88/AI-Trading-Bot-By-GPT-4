@@ -1,5 +1,5 @@
 import pandas as pd
-import trading_environment as te
+import brain as te
 import train
 import performance_metrics as pm
 from tensorflow.keras.models import load_model
