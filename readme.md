@@ -1,4 +1,6 @@
-# AI Cryptocurrency Trading Bot Fully Built with ChatGPT-4
+# Great Wall AI Trading Bot Built with ChatGPT-4
+
+Introducing the Great Wall AI Trading Bot, a cutting-edge solution that draws inspiration from the resilience and grandeur of the ancient Chinese Great Wall and the vast, enigmatic expanse of the Great GRB Wall in the cosmos. This innovative trading bot is designed to navigate the complexities of the financial markets, seeking to conquer the ever-changing landscape of opportunities and risks.
 
 This ongoing project aims to explore ChatGPT-4's ability to develop a bot, apply AI, and ultimately achieve profitable automated trading.
 
@@ -24,6 +26,10 @@ If you're a skilled coder, your expertise is invaluable! Join us and use ChatGPT
 6. `live_trading.py` - Responsible for executing live trades with the trained model using the Binance API. The bot retrieves the latest market data, preprocesses it, and uses the model to predict the next action. The chosen action is then executed on the Binance platform.
 
 7. `performance_metrics.py` - Calculates various performance metrics, such as returns, Sharpe ratio, and drawdown, for the trading bot. These metrics can be used to evaluate the performance of the bot and make adjustments as needed.
+
+8. 'fetch_data.py' - 
+
+9. 'indicators.py' - 
 
 
 ## Planed updates
